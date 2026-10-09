@@ -17,6 +17,7 @@
 </p>
 
 <p>
+  <a href="#-website-demo">Website demo</a> ·
   <a href="#-at-a-glance">Overview</a> ·
   <a href="#-capabilities">Capabilities</a> ·
   <a href="#-quick-start">Quick start</a> ·
@@ -28,6 +29,12 @@
 </div>
 
 ---
+
+## 🎬 Website demo
+
+Watch the recorded walkthrough of Atlas Research AI: **[Play WEBSITE_RECORDING.mp4](assets/WEBSITE_RECORDING.mp4)**.
+
+The video is stored in the repository at [`assets/WEBSITE_RECORDING.mp4`](assets/WEBSITE_RECORDING.mp4). Open the link to view the recording in GitHub.
 
 ## 🧭 At a glance
 
