@@ -1,0 +1,3 @@
+{"id":"ev-001","question":"What are the major technical tradeoffs between lithium iron phosphate and nickel manganese cobalt batteries?","expected_topics":["energy density","cost","safety","cycle life"]}
+{"id":"ev-002","question":"What makes retrieval-augmented generation different from fine-tuning for enterprise knowledge assistants?","expected_topics":["retrieval","model weights","freshness","evaluation"]}
+{"id":"ev-003","question":"What are common failure modes in agentic LLM systems?","expected_topics":["tool failure","hallucination","loops","prompt injection","cost"]}

@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="190" viewBox="0 0 1000 190" role="img" aria-labelledby="title desc">
+  <title id="title">Atlas Research AI</title>
+  <desc id="desc">Animated futuristic wordmark with a glowing cyan and violet gradient, orbiting node, and subtle moving light accents.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#071426"/>
+      <stop offset="55%" stop-color="#101534"/>
+      <stop offset="100%" stop-color="#071b2a"/>
+    </linearGradient>
+    <linearGradient id="titleGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#62f4ed">
+        <animate attributeName="stop-color" values="#62f4ed;#7ee7ff;#b6a2ff;#62f4ed" dur="7s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="48%" stop-color="#9be7ff">
+        <animate attributeName="stop-color" values="#9be7ff;#b6a2ff;#62f4ed;#9be7ff" dur="7s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="#bb9cff">
+        <animate attributeName="stop-color" values="#bb9cff;#62f4ed;#9be7ff;#bb9cff" dur="7s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+    <linearGradient id="beam" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#62f4ed" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#8df7ff" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#a78bfa" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="glow" x="-30%" y="-50%" width="160%" height="200%">
+      <feGaussianBlur stdDeviation="3.2" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="softGlow" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="7"/>
+    </filter>
+    <clipPath id="frame"><rect x="7" y="7" width="986" height="176" rx="22"/></clipPath>
+  </defs>
+  <rect x="7" y="7" width="986" height="176" rx="22" fill="url(#bg)" stroke="#4edce8" stroke-opacity=".32"/>
+  <g clip-path="url(#frame)">
+    <path d="M0 142 C170 105 240 184 420 143 S720 92 1000 132" fill="none" stroke="#55dff1" stroke-opacity=".11" stroke-width="1.5"/>
+    <path d="M0 151 C180 118 280 194 490 146 S800 104 1000 143" fill="none" stroke="#a78bfa" stroke-opacity=".12" stroke-width="1.5"/>
+    <circle cx="164" cy="80" r="37" fill="#5ce1e6" opacity=".12" filter="url(#softGlow)"/>
+    <g transform="translate(164 80)">
+      <circle r="29" fill="none" stroke="#62f4ed" stroke-opacity=".64" stroke-width="1.5"/>
+      <ellipse rx="36" ry="13" fill="none" stroke="#a78bfa" stroke-width="1.6" stroke-opacity=".9" transform="rotate(-35)">
+        <animateTransform attributeName="transform" type="rotate" from="-35" to="325" dur="12s" repeatCount="indefinite"/>
+      </ellipse>
+      <ellipse rx="36" ry="13" fill="none" stroke="#62f4ed" stroke-width="1.2" stroke-opacity=".75" transform="rotate(48)">
+        <animateTransform attributeName="transform" type="rotate" from="48" to="-312" dur="16s" repeatCount="indefinite"/>
+      </ellipse>
+      <path d="M0 -17 L5 -5 L17 0 L5 5 L0 17 L-5 5 L-17 0 L-5 -5 Z" fill="url(#titleGradient)" filter="url(#glow)">
+        <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="18s" repeatCount="indefinite"/>
+      </path>
+      <circle cx="35" cy="-13" r="3.5" fill="#a9faff">
+        <animate attributeName="opacity" values=".45;1;.45" dur="2.2s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+    <text x="548" y="88" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="43" font-weight="800" letter-spacing="1.5" fill="url(#titleGradient)" filter="url(#glow)">ATLAS RESEARCH AI</text>
+    <text x="548" y="119" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13" font-weight="600" letter-spacing="5" fill="#d6f7ff" opacity=".86">LOCAL INTELLIGENCE  •  GROUNDED RESEARCH</text>
+    <rect x="270" y="143" width="560" height="2" rx="1" fill="#62f4ed" opacity=".13"/>
+    <rect x="270" y="143" width="130" height="2" rx="1" fill="url(#beam)">
+      <animate attributeName="x" values="270;700;270" dur="5s" repeatCount="indefinite"/>
+    </rect>
+    <circle cx="915" cy="42" r="2" fill="#62f4ed">
+      <animate attributeName="opacity" values=".2;1;.2" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="887" cy="54" r="1.5" fill="#b6a2ff">
+      <animate attributeName="opacity" values="1;.2;1" dur="2.4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="937" cy="66" r="1.7" fill="#62f4ed">
+      <animate attributeName="opacity" values=".15;.9;.15" dur="3.4s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+</svg>
