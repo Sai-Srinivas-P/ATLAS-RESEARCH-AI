@@ -1,0 +1,22 @@
+services:
+  qdrant:
+    image: qdrant/qdrant:latest
+    ports:
+      - "6333:6333"
+      - "6334:6334"
+    volumes:
+      - qdrant_storage:/qdrant/storage
+
+  atlas-api:
+    build: .
+    env_file: .env
+    environment:
+      # Inside this container, localhost is the API container, not Qdrant.
+      QDRANT_URL: http://qdrant:6333
+    ports:
+      - "8000:8000"
+    depends_on:
+      - qdrant
+
+volumes:
+  qdrant_storage:

@@ -1,0 +1,42 @@
+[project]
+name = "atlas-research-ai"
+version = "0.2.0"
+description = "Local Chat + Deep Research + Agentic RAG system."
+requires-python = ">=3.11"
+dependencies = [
+  "fastapi>=0.115,<1",
+  "uvicorn[standard]>=0.34,<1",
+  "pydantic>=2.10,<3",
+  "pydantic-settings>=2.7,<3",
+  "langgraph>=0.3,<1",
+  "langchain-core>=0.3,<1",
+  "httpx>=0.28,<1",
+  "python-multipart>=0.0.20,<1",
+  "pypdf>=5,<6",
+  "qdrant-client>=1.13,<2",
+  "tenacity>=9,<10",
+  "fastembed>=0.4,<1",
+]
+
+[project.optional-dependencies]
+local = []
+search = ["ddgs>=9.16,<10"]
+observability = ["langfuse>=3,<4"]
+eval = ["ragas>=0.2,<1"]
+dev = [
+  "pytest>=8,<9",
+  "pytest-asyncio>=0.25,<1",
+  "ruff>=0.9,<1",
+  "mypy>=1.15,<2",
+]
+
+[project.scripts]
+atlas-api = "atlas_research.api:run"
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
