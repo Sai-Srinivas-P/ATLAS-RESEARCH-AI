@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="790" viewBox="0 0 1440 790" role="img" aria-labelledby="title desc">
+  <title id="title">Atlas Research AI homepage preview</title>
+  <desc id="desc">A dark landing page for Atlas Research AI with lime accents, the headline Research that shows its work, calls to action, workflow metrics, and a research console preview.</desc>
+  <defs>
+    <linearGradient id="lime" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e7ff63"/>
+      <stop offset="1" stop-color="#caff2f"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#10110f"/>
+      <stop offset="1" stop-color="#090a09"/>
+    </linearGradient>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="15"/>
+    </filter>
+  </defs>
+  <rect width="1440" height="790" fill="#050605"/>
+  <circle cx="335" cy="640" r="165" fill="#caff2f" opacity=".04" filter="url(#glow)"/>
+  <g font-family="Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif">
+    <!-- Navigation -->
+    <path d="M210 125H1230" stroke="#252724" stroke-width="1"/>
+    <polygon points="214,77 230,68 246,77 246,95 230,104 214,95" fill="url(#lime)"/>
+    <text x="230" y="91" text-anchor="middle" font-size="14" font-weight="800" fill="#080908">A</text>
+    <text x="260" y="91" font-size="16" font-weight="800" fill="#f4f5f1" letter-spacing=".2">ATLAS/RESEARCH</text>
+    <text x="422" y="91" font-size="14" fill="#a2a69b">Product</text>
+    <text x="485" y="91" font-size="14" fill="#a2a69b">Architecture</text>
+    <text x="596" y="91" font-size="14" fill="#a2a69b">Stack</text>
+    <text x="657" y="91" font-size="14" fill="#a2a69b">Try it</text>
+    <circle cx="1012" cy="84" r="3.5" fill="#d6ff42"/>
+    <text x="1025" y="89" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" font-weight="700" fill="#d6ff42" letter-spacing="1">LOCAL STACK READY</text>
+    <rect x="1130" y="62" width="100" height="42" fill="none" stroke="#30332e"/>
+    <text x="1180" y="88" text-anchor="middle" font-size="13" font-weight="650" fill="#f6f7f3">Open Atlas ↗</text>
+
+    <!-- Hero left -->
+    <circle cx="215" cy="190" r="3.5" fill="#d6ff42"/>
+    <text x="229" y="195" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" font-weight="650" fill="#b2b9a5" letter-spacing="2">GENAI / CHAT / DEEP RESEARCH / AGENTIC RAG</text>
+    <text x="212" y="285" font-size="78" font-weight="750" letter-spacing="-4.3" fill="#f5f6f3">Research that</text>
+    <text x="212" y="363" font-size="78" font-weight="750" letter-spacing="-4.3" fill="url(#lime)">shows its</text>
+    <text x="212" y="441" font-size="78" font-weight="750" letter-spacing="-4.3" fill="url(#lime)">work.</text>
+    <text x="215" y="493" font-size="17" fill="#a7aaa4">Atlas combines a fast conversational assistant with structured deep</text>
+    <text x="215" y="522" font-size="17" fill="#a7aaa4">research, private knowledge retrieval, critical review, and citation-</text>
+    <text x="215" y="551" font-size="17" fill="#a7aaa4">grounded reports.</text>
+    <rect x="215" y="586" width="177" height="51" fill="url(#lime)"/>
+    <text x="234" y="617" font-size="14" font-weight="750" fill="#12150a">Start with Atlas</text>
+    <text x="368" y="617" font-size="18" font-weight="750" fill="#12150a">→</text>
+    <rect x="405" y="586" width="162" height="51" fill="none" stroke="#343731"/>
+    <text x="486" y="617" text-anchor="middle" font-size="14" font-weight="650" fill="#eceee8">View a live demo</text>
+
+    <text x="215" y="690" font-size="27" font-weight="700" fill="#f1f3ed">05</text>
+    <text x="215" y="715" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10" fill="#9da397" letter-spacing=".7">WORKFLOW STAGES</text>
+    <text x="342" y="690" font-size="27" font-weight="700" fill="#f1f3ed">2</text>
+    <text x="342" y="715" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10" fill="#9da397" letter-spacing=".7">EVIDENCE CHANNELS</text>
+    <text x="496" y="690" font-size="27" font-weight="700" fill="#f1f3ed">0</text>
+    <text x="496" y="715" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10" fill="#9da397" letter-spacing=".7">PAID APIs REQUIRED</text>
+
+    <!-- Research console -->
+    <rect x="735" y="225" width="495" height="425" fill="url(#panel)" stroke="#30332e"/>
+    <path d="M735 267H1230" stroke="#30332e"/>
+    <circle cx="753" cy="246" r="3.5" fill="#42463e"/>
+    <circle cx="766" cy="246" r="3.5" fill="#42463e"/>
+    <circle cx="779" cy="246" r="3.5" fill="#42463e"/>
+    <text x="806" y="250" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#9fa69a">atlas.run</text>
+    <text x="1186" y="250" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" font-weight="700" fill="#d6ff42">LOCAL / LIVE</text>
+    <text x="760" y="302" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13" font-weight="700" fill="#5ce1e6">$</text>
+    <text x="777" y="302" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13" font-weight="700" fill="#eff1ea">atlas research</text>
+    <text x="760" y="328" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" fill="#777e72">question: "enterprise RAG vs fine-tuning"</text>
+
+    <g font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12">
+      <path d="M760 347H1205" stroke="#252823"/>
+      <text x="760" y="375" fill="#777e72">01</text><text x="800" y="375" fill="#d3d7ce">planning</text><text x="1200" y="375" text-anchor="end" fill="#d6ff42">done</text>
+      <path d="M760 391H1205" stroke="#252823"/>
+      <text x="760" y="419" fill="#777e72">02</text><text x="800" y="419" fill="#d3d7ce">web + private RAG</text><text x="1200" y="419" text-anchor="end" fill="#d6ff42">retrieved</text>
+      <path d="M760 435H1205" stroke="#252823"/>
+      <text x="760" y="463" fill="#777e72">03</text><text x="800" y="463" fill="#d3d7ce">evidence critique</text><text x="1200" y="463" text-anchor="end" fill="#d6ff42">checked</text>
+      <path d="M760 479H1205" stroke="#252823"/>
+      <text x="760" y="507" fill="#777e72">04</text><text x="800" y="507" fill="#d3d7ce">synthesis</text><text x="1200" y="507" text-anchor="end" fill="#d6ff42">grounded</text>
+    </g>
+
+    <rect x="760" y="531" width="445" height="94" fill="#11140b" stroke="#32382b"/>
+    <text x="779" y="557" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10" font-weight="700" fill="#d6ff42" letter-spacing=".8">REPORT READY</text>
+    <text x="779" y="583" font-size="15" font-weight="550" fill="#f0f3ea">Evidence-backed research, not a black box.</text>
+    <text x="779" y="605" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10" fill="#939a8d">sources · findings · citations · traceable evidence</text>
+
+    <path d="M210 750H1230" stroke="#1e211d"/>
+    <text x="210" y="772" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10" fill="#62695f" letter-spacing="1.2">ATLAS RESEARCH AI  /  HOMEPAGE PREVIEW</text>
+    <text x="1230" y="772" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10" fill="#62695f" letter-spacing="1.2">LOCAL-FIRST · EVIDENCE-FOCUSED</text>
+  </g>
+</svg>
