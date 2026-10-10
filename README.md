@@ -36,13 +36,13 @@ The zoomed-in, high-resolution preview crops away browser chrome and empty side 
 
 <div align="center">
 
-<a href="./assets/WEBSITE_RECORDING.mp4">
+<a href="https://github.com/Sai-Srinivas-P/ATLAS-RESEARCH-AI/raw/refs/heads/main/assets/WEBSITE_RECORDING.mp4">
   <img src="./assets/atlas-research-ai-slideshow-hq.gif" alt="Click to watch the full Atlas Research AI website walkthrough" width="100%" />
 </a>
 
 <br />
 
-<a href="./assets/WEBSITE_RECORDING.mp4">
+<a href="https://github.com/Sai-Srinivas-P/ATLAS-RESEARCH-AI/raw/refs/heads/main/assets/WEBSITE_RECORDING.mp4">
   <img src="https://img.shields.io/badge/▶_WATCH_FULL_WEBSITE_DEMO-0b7285?style=for-the-badge&logo=github&logoColor=white" alt="Watch the full website demo" />
 </a>
 
