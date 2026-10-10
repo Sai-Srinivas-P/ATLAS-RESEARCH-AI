@@ -38,7 +38,7 @@ jobs:
           input="assets/WEBSITE_RECORDING.mp4"
           # Crop away browser chrome, side margins, and the recording watermark.
           # The tighter crop enlarges the actual website UI in the README.
-          vf="crop=1580:650:170:45,scale=1440:-1:flags=lanczos"
+          vf="crop=1580:650:170:45,scale=1600:-1:flags=lanczos"
 
           ffmpeg -hide_banner -loglevel error -ss 249 -i "$input" -frames:v 1 -vf "$vf" "$RUNNER_TEMP/atlas-slides/01-home.png" -y
           ffmpeg -hide_banner -loglevel error -ss 8   -i "$input" -frames:v 1 -vf "$vf" "$RUNNER_TEMP/atlas-slides/02-chat.png" -y
@@ -64,10 +64,10 @@ jobs:
 
           # Create one shared 256-colour palette for all screens so colours
           # remain consistent across transitions.
-          sample = Image.new("RGB", (640, 227 * len(slides)), (5, 6, 5))
+          sample = Image.new("RGB", (800, 325 * len(slides)), (5, 6, 5))
           for index, image in enumerate(slides):
-              sample.paste(image.resize((640, 227), Image.Resampling.LANCZOS), (0, index * 227))
-          palette_image = sample.quantize(colors=256, method=Image.Quantize.MEDIANCUT)
+              sample.paste(image.resize((800, 325), Image.Resampling.LANCZOS), (0, index * 325))
+          palette_image = sample.quantize(colors=256, method=Image.Quantize.MAXCOVERAGE)
           palette = palette_image.getpalette()
           palette_template = Image.new("P", (1, 1))
           palette_template.putpalette(palette)
@@ -75,7 +75,7 @@ jobs:
           def indexed(image):
               return image.quantize(
                   palette=palette_template,
-                  dither=Image.Dither.FLOYDSTEINBERG,
+                  dither=Image.Dither.NONE,
               )
 
           frames = []
@@ -97,7 +97,7 @@ jobs:
                   frames.append(indexed(canvas))
                   durations.append(70)
 
-          output = Path("assets/atlas-research-ai-slideshow-reversed.gif")
+          output = Path("assets/atlas-research-ai-slideshow-hq.gif")
           output.parent.mkdir(parents=True, exist_ok=True)
           frames[0].save(
               output,
@@ -107,7 +107,7 @@ jobs:
               duration=durations,
               loop=0,
               disposal=2,
-              optimize=True,
+              optimize=False,
           )
           print(f"Created {output}: {width}x{height}, {len(frames)} frames, {output.stat().st_size:,} bytes")
           PY
@@ -118,7 +118,7 @@ jobs:
           set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add assets/atlas-research-ai-slideshow-reversed.gif
+          git add assets/atlas-research-ai-slideshow-hq.gif
           if git diff --cached --quiet; then
             echo "The slideshow is already up to date."
             exit 0
