@@ -38,7 +38,7 @@ jobs:
           input="assets/WEBSITE_RECORDING.mp4"
           # Crop away browser chrome, side margins, and the recording watermark.
           # The tighter crop enlarges the actual website UI in the README.
-          vf="crop=1580:650:170:45,scale=1600:-1:flags=lanczos"
+          vf="crop=1580:650:170:45,scale=1800:-1:flags=lanczos"
 
           ffmpeg -hide_banner -loglevel error -ss 249 -i "$input" -frames:v 1 -vf "$vf" "$RUNNER_TEMP/atlas-slides/01-home.png" -y
           ffmpeg -hide_banner -loglevel error -ss 8   -i "$input" -frames:v 1 -vf "$vf" "$RUNNER_TEMP/atlas-slides/02-chat.png" -y
@@ -64,9 +64,9 @@ jobs:
 
           # Create one shared 256-colour palette for all screens so colours
           # remain consistent across transitions.
-          sample = Image.new("RGB", (800, 325 * len(slides)), (5, 6, 5))
+          sample = Image.new("RGB", (1200, 488 * len(slides)), (5, 6, 5))
           for index, image in enumerate(slides):
-              sample.paste(image.resize((800, 325), Image.Resampling.LANCZOS), (0, index * 325))
+              sample.paste(image.resize((1200, 488), Image.Resampling.LANCZOS), (0, index * 488))
           palette_image = sample.quantize(colors=256, method=Image.Quantize.MAXCOVERAGE)
           palette = palette_image.getpalette()
           palette_template = Image.new("P", (1, 1))
