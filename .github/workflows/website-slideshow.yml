@@ -1,0 +1,72 @@
+name: Build website slideshow
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "assets/WEBSITE_RECORDING.mp4"
+      - ".github/workflows/website-slideshow.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: website-slideshow
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Install FFmpeg
+        run: |
+          sudo apt-get update
+          sudo apt-get install --yes ffmpeg
+
+      - name: Create looping website slideshow
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p "$RUNNER_TEMP/atlas-slides"
+          input="assets/WEBSITE_RECORDING.mp4"
+          vf="crop=1918:758:0:30,scale=520:-1:flags=lanczos"
+
+          ffmpeg -hide_banner -loglevel error -ss 249 -i "$input" -frames:v 1 -vf "$vf" "$RUNNER_TEMP/atlas-slides/01-home.png" -y
+          ffmpeg -hide_banner -loglevel error -ss 20  -i "$input" -frames:v 1 -vf "$vf" "$RUNNER_TEMP/atlas-slides/02-chat.png" -y
+          ffmpeg -hide_banner -loglevel error -ss 155 -i "$input" -frames:v 1 -vf "$vf" "$RUNNER_TEMP/atlas-slides/03-report.png" -y
+
+          cat > "$RUNNER_TEMP/atlas-slides/frames.txt" <<EOF
+          file '$RUNNER_TEMP/atlas-slides/01-home.png'
+          duration 2.0
+          file '$RUNNER_TEMP/atlas-slides/02-chat.png'
+          duration 2.0
+          file '$RUNNER_TEMP/atlas-slides/03-report.png'
+          duration 2.0
+          file '$RUNNER_TEMP/atlas-slides/03-report.png'
+          EOF
+
+          ffmpeg -hide_banner -loglevel error \
+            -f concat -safe 0 -i "$RUNNER_TEMP/atlas-slides/frames.txt" \
+            -filter_complex "fps=2,split[s0][s1];[s0]palettegen=max_colors=16:stats_mode=full[p];[s1][p]paletteuse=dither=none" \
+            -loop 0 assets/atlas-research-ai-slideshow.gif -y
+
+      - name: Commit slideshow when it changes
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/atlas-research-ai-slideshow.gif
+          if git diff --cached --quiet; then
+            echo "The slideshow is already up to date."
+            exit 0
+          fi
+          git commit -m "Build website slideshow GIF"
+          git pull --rebase origin main
+          git push origin HEAD:main
