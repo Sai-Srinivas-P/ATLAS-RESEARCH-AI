@@ -97,7 +97,7 @@ jobs:
                   frames.append(indexed(canvas))
                   durations.append(70)
 
-          output = Path("assets/atlas-research-ai-slideshow.gif")
+          output = Path("assets/atlas-research-ai-slideshow-reversed.gif")
           output.parent.mkdir(parents=True, exist_ok=True)
           frames[0].save(
               output,
@@ -118,11 +118,11 @@ jobs:
           set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add assets/atlas-research-ai-slideshow.gif
+          git add assets/atlas-research-ai-slideshow-reversed.gif
           if git diff --cached --quiet; then
             echo "The slideshow is already up to date."
             exit 0
           fi
-          git commit -m "Improve horizontal website slideshow quality"
+          git commit -m "Build reversed horizontal website slideshow"
           git pull --rebase origin main
           git push origin HEAD:main
