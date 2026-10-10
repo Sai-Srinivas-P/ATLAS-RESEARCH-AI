@@ -17,7 +17,7 @@
 </p>
 
 <p>
-  <a href="#-homepage-preview">Homepage preview</a> ·
+  <a href="#-website-slideshow">Website slideshow</a> ·
   <a href="#-at-a-glance">Overview</a> ·
   <a href="#-capabilities">Capabilities</a> ·
   <a href="#-quick-start">Quick start</a> ·
@@ -30,15 +30,15 @@
 
 ---
 
-## 🖥️ Homepage preview
+## 🎞️ Website slideshow
 
-Here is the opening page of Atlas Research AI, recreated from the first screen of the website recording.
+The looping preview below automatically cycles through the Atlas Research AI landing page, chat interface, and a research report.
 
 <p align="center">
-  <img src="./assets/atlas-research-ai-homepage.svg" alt="Atlas Research AI homepage preview: Research that shows its work" width="100%" />
+  <img src="./assets/atlas-research-ai-slideshow.gif" alt="Auto-playing slideshow of the Atlas Research AI homepage, chat interface, and research report" width="100%" />
 </p>
 
-The full walkthrough is still available at [`assets/WEBSITE_RECORDING.mp4`](assets/WEBSITE_RECORDING.mp4).
+Want to see the full walkthrough? Open [`assets/WEBSITE_RECORDING.mp4`](assets/WEBSITE_RECORDING.mp4) or view the [static homepage preview](./assets/atlas-research-ai-homepage.svg).
 
 ## 🧭 At a glance
 
