@@ -34,10 +34,6 @@
 
 The zoomed-in, high-resolution preview crops away browser chrome and empty side margins so the website is easier to read. It now slides right-to-left through four screens: the landing page, chat, a research prompt, and the generated report.
 
-<p align="center">
-  <img src="./assets/atlas-research-ai-slideshow-hq.gif" alt="High-quality right-to-left looping slideshow showing the Atlas Research AI homepage, chat, research prompt, and report" width="100%" />
-</p>
-
 <div align="center">
 
 <a href="./assets/WEBSITE_RECORDING.mp4">
