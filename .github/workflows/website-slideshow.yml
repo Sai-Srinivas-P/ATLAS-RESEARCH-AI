@@ -36,9 +36,9 @@ jobs:
           set -euo pipefail
           mkdir -p "$RUNNER_TEMP/atlas-slides"
           input="assets/WEBSITE_RECORDING.mp4"
-          # Remove browser chrome and the bottom overlay area, while keeping
-          # enough pixels for interface text to remain readable in the README.
-          vf="crop=1918:680:0:30,scale=1280:-1:flags=lanczos"
+          # Crop away browser chrome, side margins, and the recording watermark.
+          # The tighter crop enlarges the actual website UI in the README.
+          vf="crop=1580:650:170:45,scale=1440:-1:flags=lanczos"
 
           ffmpeg -hide_banner -loglevel error -ss 249 -i "$input" -frames:v 1 -vf "$vf" "$RUNNER_TEMP/atlas-slides/01-home.png" -y
           ffmpeg -hide_banner -loglevel error -ss 8   -i "$input" -frames:v 1 -vf "$vf" "$RUNNER_TEMP/atlas-slides/02-chat.png" -y
