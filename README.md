@@ -32,7 +32,7 @@
 
 ## 🎞️ Website slideshow
 
-This sharper 1280-pixel-wide preview uses a left-to-right slide transition through four screens: the landing page, chat, a research prompt, and the generated report.
+The zoomed-in, high-resolution preview crops away browser chrome and empty side margins so the website is easier to read. It slides left-to-right through four screens: the landing page, chat, a research prompt, and the generated report.
 
 <p align="center">
   <img src="./assets/atlas-research-ai-slideshow.gif" alt="High-resolution left-to-right looping slideshow showing the Atlas Research AI homepage, chat, research prompt, and report" width="100%" />
