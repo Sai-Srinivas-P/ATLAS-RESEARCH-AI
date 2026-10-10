@@ -32,10 +32,10 @@
 
 ## 🎞️ Website slideshow
 
-The looping preview below automatically cycles through the Atlas Research AI landing page, chat interface, and a research report.
+This sharper 1280-pixel-wide preview uses a left-to-right slide transition through four screens: the landing page, chat, a research prompt, and the generated report.
 
 <p align="center">
-  <img src="./assets/atlas-research-ai-slideshow.gif" alt="Auto-playing slideshow of the Atlas Research AI homepage, chat interface, and research report" width="100%" />
+  <img src="./assets/atlas-research-ai-slideshow.gif" alt="High-resolution left-to-right looping slideshow showing the Atlas Research AI homepage, chat, research prompt, and report" width="100%" />
 </p>
 
 Want to see the full walkthrough? Open [`assets/WEBSITE_RECORDING.mp4`](assets/WEBSITE_RECORDING.mp4) or view the [static homepage preview](./assets/atlas-research-ai-homepage.svg).
