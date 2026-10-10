@@ -38,6 +38,8 @@ The zoomed-in, high-resolution preview crops away browser chrome and empty side 
   <img src="./assets/atlas-research-ai-slideshow-hq.gif" alt="High-quality right-to-left looping slideshow showing the Atlas Research AI homepage, chat, research prompt, and report" width="100%" />
 </p>
 
+**🎬 [Watch the full website screen recording](./assets/WEBSITE_RECORDING.mp4)**  
+Click the link to open the video on GitHub, then press Play when you're ready.
 
 ## 🧭 At a glance
 
