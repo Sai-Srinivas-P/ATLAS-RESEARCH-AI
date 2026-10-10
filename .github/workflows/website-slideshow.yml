@@ -87,13 +87,13 @@ jobs:
               durations.append(950)
 
               following = slides[(index + 1) % len(slides)]
-              # The current screen moves right; the next screen enters from
-              # the left. This creates horizontal, not vertical, movement.
+              # Reverse the direction: the current screen exits left,
+              # while the next screen enters from the right.
               for step in range(1, transition_steps + 1):
                   shift = round(width * step / transition_steps)
                   canvas = Image.new("RGB", (width, height), (5, 6, 5))
-                  canvas.paste(current, (shift, 0))
-                  canvas.paste(following, (shift - width, 0))
+                  canvas.paste(current, (-shift, 0))
+                  canvas.paste(following, (width - shift, 0))
                   frames.append(indexed(canvas))
                   durations.append(70)
 
