@@ -37,7 +37,7 @@ The zoomed-in, high-resolution preview crops away browser chrome and empty side 
 <div align="center">
 
 <a href="./assets/WEBSITE_RECORDING.mp4">
-  <img src="./assets/atlas-research-ai-slideshow-hq.gif" alt="Click to watch the full Atlas Research AI website walkthrough" width="88%" />
+  <img src="./assets/atlas-research-ai-slideshow-hq.gif" alt="Click to watch the full Atlas Research AI website walkthrough" width="100%" />
 </a>
 
 <br />
