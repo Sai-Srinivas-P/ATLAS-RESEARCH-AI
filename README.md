@@ -16,14 +16,14 @@
   <img src="https://img.shields.io/badge/LangGraph-RAG-7c3aed?style=for-the-badge" alt="LangGraph and RAG" />
 </p>
 
-<p>
-  <a href="#-website-slideshow">Website slideshow</a> ·
-  <a href="#-at-a-glance">Overview</a> ·
-  <a href="#-capabilities">Capabilities</a> ·
-  <a href="#-quick-start">Quick start</a> ·
-  <a href="#-architecture">Architecture</a> ·
-  <a href="#-api-reference">API</a> ·
-  <a href="#-troubleshooting">Troubleshooting</a>
+<p align="center">
+  <a href="#-website-slideshow"><img src="https://img.shields.io/badge/🎞️_Slideshow-12304a?style=for-the-badge" alt="Website slideshow" /></a>
+  <a href="#-at-a-glance"><img src="https://img.shields.io/badge/Overview-12304a?style=for-the-badge" alt="Overview" /></a>
+  <a href="#-capabilities"><img src="https://img.shields.io/badge/Capabilities-12304a?style=for-the-badge" alt="Capabilities" /></a>
+  <a href="#-quick-start"><img src="https://img.shields.io/badge/Quick_Start-12304a?style=for-the-badge" alt="Quick start" /></a>
+  <a href="#-architecture"><img src="https://img.shields.io/badge/Architecture-12304a?style=for-the-badge" alt="Architecture" /></a>
+  <a href="#-api-reference"><img src="https://img.shields.io/badge/API-12304a?style=for-the-badge" alt="API" /></a>
+  <a href="#-troubleshooting"><img src="https://img.shields.io/badge/Troubleshooting-12304a?style=for-the-badge" alt="Troubleshooting" /></a>
 </p>
 
 </div>
@@ -36,13 +36,13 @@ The zoomed-in, high-resolution preview crops away browser chrome and empty side 
 
 <div align="center">
 
-<a href="https://github.com/Sai-Srinivas-P/ATLAS-RESEARCH-AI/raw/refs/heads/main/assets/WEBSITE_RECORDING.mp4">
+<a href="https://sai-srinivas-p.github.io/ATLAS-RESEARCH-AI/video.html">
   <img src="./assets/atlas-research-ai-slideshow-hq.gif" alt="Click to watch the full Atlas Research AI website walkthrough" width="100%" />
 </a>
 
 <br />
 
-<a href="https://github.com/Sai-Srinivas-P/ATLAS-RESEARCH-AI/raw/refs/heads/main/assets/WEBSITE_RECORDING.mp4">
+<a href="https://sai-srinivas-p.github.io/ATLAS-RESEARCH-AI/video.html">
   <img src="https://img.shields.io/badge/▶_WATCH_FULL_WEBSITE_DEMO-0b7285?style=for-the-badge&logo=github&logoColor=white" alt="Watch the full website demo" />
 </a>
 
